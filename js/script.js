@@ -9,9 +9,9 @@
 // eslint-disable-next-line no-unused-vars
 function checkNumber() {
   let age = parseFloat(document.getElementById('age').value)
-  let day = document.getElementById('day').value
+  const day = document.getElementById('day').value
 
-  if ((age > 12) && (age < 21) || (day == "Tuesday") || (day == "Thursday")) {
+  if ((age > 12) && (age < 21) || (day === 'Tuesday') || (day === 'Thursday')) {
     age = ('You get a discount at the museum!')
   } else {
     age = ('You must pay full price at the museum.')
